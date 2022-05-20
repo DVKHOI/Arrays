@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function bai1() {
+      let myColor = ["Red", "Blue", "Yellow", "Black", "White"];
+      myColor.join;
+      document.write(myColor);
+    }
+    // bai1();
+    function bai2() {
+      let string = prompt("Nhap vao day so: ");
+      let arr = string.split("");
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0 && arr[i + 1] % 2 == 0) {
+          arr[i] += "-";
+        }
+      }
+      document.write(arr.join(""));
+    }
+    // bai2();
+    function bai3() {
+      let str = "The Quick Brown Fox";
+      let arr = str.split("");
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == arr[i].toUpperCase()) {
+          arr[i] = arr[i].toLowerCase();
+        } else {
+          arr[i] = arr[i].toUpperCase();
+        }
+      }
+
+      console.log(arr.join(""));
+    }
+    bai3();
+  </script>
+</html>
